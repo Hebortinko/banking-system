@@ -20,10 +20,10 @@ public class Account {
 
     public Account() {}
 
-    public Account(String iban, String currency, BigDecimal balance) {
+    public Account(String iban, String currency) {
         this.iban = iban;
         this.currency = currency;
-        this.balance = BigDecimal.ZERO;
+
     }
 
     // getters & setters
@@ -36,7 +36,7 @@ public class Account {
     public String getIban() {
         return iban;
     }
-    void setIban(String iban) {
+    public void setIban(String iban) {
         this.iban = iban;
     }
 
@@ -44,7 +44,7 @@ public class Account {
     public String getCurrency() {
         return currency;
     }
-    void setCurrency(String currency) {
+    public void setCurrency(String currency) {
         this.currency = currency;
     }
 
@@ -52,7 +52,8 @@ public class Account {
     public BigDecimal getBalance() {
         return balance;
     }
-    void setBalance(BigDecimal balance) {
+
+    public void setBalance(BigDecimal balance) {
         this.balance = balance;
     }
 }
